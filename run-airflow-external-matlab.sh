@@ -11,6 +11,6 @@ docker compose --profile default --profile matlab up -d
 
 echo
 echo "ℹ️ See logs :"
-echo "   docker compose --profile default --profile matlab -f logs -f"
+echo "   docker compose --profile default --profile matlab logs -f"
 echo
 echo "✅ Access Airflow (default) : http://localhost:8080"

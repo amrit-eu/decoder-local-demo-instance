@@ -8,4 +8,4 @@ export AIRFLOW_GID=$(id -g)
 
 # Run Airflow with docker compose
 echo "🚫 Stopping d'Airflow..."
-docker compose --profile default --profile matlab down -v
+docker compose --profile default --profile matlab down
