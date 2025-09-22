@@ -6,11 +6,11 @@ cd "$(dirname "$0")"
 export AIRFLOW_UID=$(id -u)
 export AIRFLOW_GID=$(id -g)
 
-echo "🚀 Running Airflow…"
-docker compose up -d
+echo "🚀 Running Airflow using 'MATLAB container'…"
+docker compose --profile default --profile matlab up -d
 
 echo
 echo "ℹ️ See logs :"
-echo "   docker compose logs -f"
+echo "   docker compose --profile default --profile matlab -f logs -f"
 echo
 echo "✅ Access Airflow (default) : http://localhost:8080"
