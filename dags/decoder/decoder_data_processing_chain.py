@@ -55,7 +55,7 @@ decoder_data_processing_task = SingularityOperator(
     force_pull=False,
     options=[
         "--bind",
-        f"{HOST_MATLAB_RUNTIME}/R2022b:/mnt/runtime:ro",
+        f"{HOST_MATLAB_RUNTIME}:/mnt/runtime:ro",
         "--bind",
         f"{HOST_DATA_DIRECTORY}/decArgo_demo/input:/mnt/data/rsync:rw",
         "--bind",

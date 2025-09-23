@@ -65,16 +65,8 @@ In this case, the `compose.override.yml` mounts the host path (e.g. `/opt/matlab
 To launch in this mode, simply run:
 
 ```bash
-./run-airflow-local-matlab.sh /absolute-path-to/matlab-runtime
+./run-airflow-local-matlab.sh /absolute-path-to/matlab/runtime/R202XX
 ```
-
-### Decoder Web Access
-
-Once running, the Airflow decoder DAG is usually available at:
-
-- <http://localhost:8080/dags/argo-decoder-data-processing-chain>
-
-Trigger it to run the decoder on a demonstration Dataset (one cycle of float `6904182`)
 
 ### 2. MATLAB Runtime provided by a dedicated container
 
@@ -91,6 +83,16 @@ To launch in this mode, use:
 ```
 
 This script enables the `runtime-matlab` service, which pulls the MATLAB Runtime container image and makes it accessible to Airflow.
+
+---
+
+### Decoder Web Access
+
+Once running, the Airflow decoder DAG is usually available at:
+
+- <http://localhost:8080/dags/argo-decoder-data-processing-chain>
+
+Trigger it to run the decoder on a demonstration Dataset (one cycle of float `6904182`)
 
 ---
 
