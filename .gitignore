@@ -1,6 +1,13 @@
-config/
-data/
-logs/
+config/**
+data/decArgo_demo/output/**
+logs/**
 
 __pycache__
 *.pyc
+
+!/data/**/
+!/data/**/.gitkeep
+!/config/**/
+!/config/**/.gitkeep
+!/logs/**/
+!/logs/**/.gitkeep
